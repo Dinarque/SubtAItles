@@ -39,7 +39,15 @@ def get_video(link):
           print("clear")
     os.rename(out_file, "buffer.mp4")
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
+    
+    
+    if debug_mode : 
+        st.subheader("LS")
+        st.write(os.listdir)
+    
     return yt.title, yt.thumbnail_url, mp3, "buffer.mp4"
+   
+   
 
 
 def get_subtitles(link):
