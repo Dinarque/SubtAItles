@@ -244,7 +244,7 @@ if "subtitles" in st.session_state :
     #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
     #st.video(final)
     
-    video = VideoFileClip(st.session_state.mp4)
+    video = VideoFileClip("buffer.mp4")
     subtitles = pysrt.open("subtitles.srt")
     
     
