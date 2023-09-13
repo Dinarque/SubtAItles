@@ -41,7 +41,7 @@ def get_video(link):
     os.rename(out_file, "buffer.mp4")
     base , ext = os.path.splitext(out_file)
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
-    return yt.title, yt.thumbnail_url, mp3, "buffer.mp4"
+    return yt.title, yt.thumbnail_url, mp3, out_file
 
 
 def get_subtitles(link):
@@ -248,7 +248,7 @@ if "subtitles" in st.session_state :
     #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
     #st.video(final)
     
-    video = VideoFileClip("buffer.mp4")
+    video = VideoFileClip(st.session_state.mp4)
     subtitles = pysrt.open("subtitles.srt")
     
     
