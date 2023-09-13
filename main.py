@@ -228,25 +228,7 @@ if "subtitles" in st.session_state :
             mime="docx"
         )
     
-    st.write("lets play the video")
     
-    video_file = open(st.session_state.mp4, 'rb')
-    video_bytes = video_file.read()
-    st.video(video_bytes)
-    st.write("lets add the subtitles")
-    #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
-    #st.video(final)
-    
-    
-    generator = lambda txt: TextClip(txt, font='Arial', fontsize=16, color='white')
-    subtitles = SubtitlesClip("subtitles.srt", generator)
-
-    video = VideoFileClip(st.session_state.mp4)
-    result = CompositeVideoClip([video, subtitles.set_pos(('center','bottom'))])
-
-    result.write_videofile("out.mp4", fps=video.fps, temp_audiofile="temp-audio.m4a", remove_temp=True, codec="libx264", audio_codec="aac")
-
-
    
         
 else : 
