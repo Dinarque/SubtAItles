@@ -1,26 +1,25 @@
-1 00:00:00,410 --> 00:00:03,694 ___ ____ is ____ Griffith. ___ the ________ _________________  
-2 00:00:03,732 --> 00:00:06,638 ___ ___ here __ ____ you ___ __ ________ YouTube _______  
-3 00:00:06,804 --> 00:00:10,478 Now, _____ ____ you probably don't ____ ___ ____ very ______  
-4 00:00:10,564 --> 00:00:13,822 __ _____ videos ____ _______ __ ______ ___ _____  
-5 00:00:13,876 --> 00:00:17,306 _______ _____ ____ _________ They provide ___ _____  
-6 00:00:17,338 --> 00:00:20,794 __ _____ _____ __ ____ that you can share ___  
-7 00:00:20,842 --> 00:00:24,014 _______ __ __ other websites. ___ you  
-8 00:00:24,052 --> 00:00:27,782 ________ ____ your ______ ___ ___ ____ _ local copy of a _____ ______ seen  
-9 00:00:27,836 --> 00:00:31,382 _______ Who ___ __ to ______ __ __ right ahead.  
-10 00:00:31,516 --> 00:00:34,406 _____ _____ __ show ___ how __ do ___ ______ ___ ____ __ pick _  
-11 00:00:34,428 --> 00:00:37,782 ________ product __ _______ ____ ___ really ____  
-12 00:00:37,836 --> 00:00:40,890 ____ ___ _____ __ _____ __ __ ___ job. __ have ____ ____ we _________  
-13 00:00:41,040 --> 00:00:44,060 _____ __ ___ ______ ___ to ________ _______ _______  
-14 00:00:44,510 --> 00:00:47,994 Second, ____ ___ _____ ______ ____ on YouTube __  
-15 00:00:48,032 --> 00:00:51,546 ________ _______ ______ going to ____ and ____ ____ ___  
-16 00:00:51,568 --> 00:00:54,618 URL. ____ ____ simple. Take ____ ____  
-17 00:00:54,714 --> 00:00:57,354 _____ __ ____ the software __ _______ __ _______  
-18 00:00:57,482 --> 00:01:01,214 ___ ___ ________ __ _______ ____ __ ___ ____ ___ ____  
-19 00:01:01,332 --> 00:01:05,150 _____ do a __________ as __ _________ the _____ ___  
-20 00:01:05,220 --> 00:01:09,006 ____ ________ give __ __ ___ __ _ ________ _____ ___________ _____ __ ___  
-21 00:01:09,028 --> 00:01:11,934 _____ ___ ___ ___ _____ __ ______ _______ __ ___ ___ ___  
-22 00:01:11,972 --> 00:01:15,746 ___ ___ ________ ___ something _ ______ higher __ ________ ____ ______  
-23 00:01:15,778 --> 00:01:18,838 ___ ___ ___ ___ _____ __ _______ ___ __ ________ you ____ ____ ___  
-24 00:01:18,924 --> 00:01:22,518 ___________ _____ _____ it ____ ___ ____ _______ You're ____ taking _____ ___ __ ___  
-25 00:01:22,524 --> 00:01:26,338 _______ of ___ ________ who ____ ___ video. ____ luck ____ ____ downloads.  
-26 00:01:26,434 --> 00:01:29,640 ___ _____ ___ ___ always _____ PCMag.com.  
+1 00:00:00,410 --> 00:00:03,978 Hi, this is Eric Griffith. I'm the features editor@pcmag.com, and I'm  
+2 00:00:03,994 --> 00:00:07,086 here to tell you how to download YouTube videos. Now,  
+3 00:00:07,108 --> 00:00:10,814 first off, you probably don't have to. It's very simple to  
+4 00:00:10,852 --> 00:00:14,606 share videos from YouTube or almost any video sharing site,  
+5 00:00:14,708 --> 00:00:18,618 even Facebook. They provide all sorts of embed codes  
+6 00:00:18,714 --> 00:00:22,762 or URLs that you can share via texting or on other websites.  
+7 00:00:22,906 --> 00:00:26,626 But you probably have your reason why you need a local copy  
+8 00:00:26,658 --> 00:00:29,698 of a video you've seen online. Who are we to judge?  
+9 00:00:29,794 --> 00:00:33,142 So go right ahead. We're going to show you how to do it.  
+10 00:00:33,276 --> 00:00:36,646 First, you need to pick a software product or service  
+11 00:00:36,748 --> 00:00:39,674 that you really like that you think is going to do the job. We have  
+12 00:00:39,712 --> 00:00:42,902 many that we recommend right in our story, how to download  
+13 00:00:42,966 --> 00:00:46,666 YouTube videos. Second, find the video itself  
+14 00:00:46,768 --> 00:00:49,642 over on YouTube or whatever service you're going to use,  
+15 00:00:49,776 --> 00:00:53,342 and then copy the URL. It's that simple.  
+16 00:00:53,476 --> 00:00:57,354 Take that URL, paste it into the software or service of choice,  
+17 00:00:57,482 --> 00:01:01,214 and the software or service will do the work for you.  
+18 00:01:01,332 --> 00:01:05,118 It'll do a conversion as it downloads the video and  
+19 00:01:05,204 --> 00:01:09,006 will probably give it to you in a slightly lower resolution, which is the  
+20 00:01:09,028 --> 00:01:12,254 price you pay for free. If you're willing to pay for it. You can  
+21 00:01:12,292 --> 00:01:15,698 probably get something a little higher in quality. Once you've  
+22 00:01:15,714 --> 00:01:18,790 got it, you can store it locally and do whatever you like with it.  
+23 00:01:18,860 --> 00:01:22,438 Preferably, don't share it with too many people. You're just taking money out of  
+24 00:01:22,444 --> 00:01:25,606 the pockets of the creators who made the video. Good luck with your  
+25 00:01:25,628 --> 00:01:29,640 downloads. For more, you can always visit PCMag.com.  
