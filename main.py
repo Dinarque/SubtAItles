@@ -242,19 +242,32 @@ if "subtitles" in st.session_state :
     # Load the video clip
     video = VideoFileClip(st.session_state.mp4)
     
-    # Load the SRT subtitles
-    subtitles = TextClip.subtitles("subtitles.srt")
+        
+    # Load the SRT subtitles and parse them
+    subtitles = []
+    with open("subtitles.srt", "r") as subtitle_file:
+        lines = subtitle_file.read().splitlines()
+        for i in range(0, len(lines), 4):
+            start_time, end_time = lines[i + 1].split(" --> ")
+            subtitle_text = lines[i + 2]
+            start_time = TextClip.cvsecs(start_time)
+            end_time = TextClip.cvsecs(end_time)
+            subtitles.append((start_time, end_time, subtitle_text))
     
-    # Set the subtitles duration to match the video
-    subtitles = subtitles.set_duration(video.duration)
-    
-    # Overlay the subtitles on the video
-    video_with_subtitles = video.set_audio(AudioSegment.silent()).set_duration(video.duration).set_audio(video.audio).set_mask(subtitles.mask).set_position(("center", "bottom")).set_start(0)
+    # Create a video with subtitles
+    video_with_subtitles = video.set_audio(AudioSegment.silent())
+    for start_time, end_time, subtitle_text in subtitles:
+        subtitle_clip = TextClip(subtitle_text, fontsize=24, color='white', bg_color='black')
+        subtitle_clip = subtitle_clip.set_duration(end_time - start_time)
+        subtitle_clip = subtitle_clip.set_start(start_time)
+        video_with_subtitles = video_with_subtitles.set_audio(video.audio)
+        video_with_subtitles = video_with_subtitles.set_mask(subtitle_clip.mask)
+        video_with_subtitles = video_with_subtitles.set_position(("center", "bottom"))
     
     # Write the video with subtitles to a file
     video_with_subtitles.write_videofile("output_video_with_subtitles.mp4", codec="libx264")
-        
-   
+    st.video("output_video_with_subtitles.mp4")
+       
         
 else : 
     st.subheader("Welcome to SubtAItle")
