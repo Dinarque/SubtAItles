@@ -23,8 +23,7 @@ from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 def get_video(link):
     
     yt = YouTube(link)
-    video = yt.streams.filter(only_audio=False).first()
-    soundless_video = yt.streams.filter(only_audio=True).first()
+    video = yt.streams.first()
     out_file = video.download()
     try :
         os.remove("buffer.mp4")
@@ -39,6 +38,7 @@ def get_video(link):
     except :
           print("clear")
     os.rename(out_file, "buffer.mp4")
+    
     base , ext = os.path.splitext(out_file)
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
     return yt.title, yt.thumbnail_url, mp3, out_file
