@@ -1,0 +1,7 @@
+assemblyai==0.17.0
+ffmpeg_python==0.2.0
+pydub==0.25.1
+pytube==15.0.0
+streamlit==1.26.0
+streamlit_player==0.1.5
+~treamlit==1.25.0
