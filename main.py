@@ -38,9 +38,6 @@ def get_video(link):
     except :
           print("clear")
     os.rename(out_file, "buffer.mp4")
-    os.remove(out_file)
-    
-    base , ext = os.path.splitext(out_file)
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
     return yt.title, yt.thumbnail_url, mp3, "buffer.mp4"
 
