@@ -240,6 +240,9 @@ if "subtitles" in st.session_state :
             file_name= 'worksheet.docx',
             mime="docx"
         )
+    
+    st.write("lets play the video")
+    st.video("buffer.mp4")
     st.write("lets add the subtitles")
     #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
     #st.video(final)
