@@ -207,8 +207,8 @@ if "subtitles" in st.session_state :
             mime="docx"
         )
     st.write("lets add the subtitles")
-    #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
-    #st.video(final)
+    final = add_subtitles(st.session_state.mp4, "subtitles.srt")
+    st.video(final)
     
    
    
