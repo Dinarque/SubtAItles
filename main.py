@@ -161,7 +161,7 @@ def save_subtitles_to_doc(subs) :
     import docx
     doc = docx.Document()
     doc.add_heading(f'Worksheet for the video {st.session_state.title}',0)
-    st.add_paragraph(subs)
+    doc.add_paragraph(subs)
     doc.save('worksheet.docx')
     
 ## sidebar 
