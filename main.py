@@ -44,7 +44,7 @@ def get_video(link):
 def get_subtitles(link):
 
     import assemblyai as aai
-    aai.settings.api_key = st.secrets["key"]
+    aai.settings.api_key = st.secrets["KEY"]
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(link)
     return transcript
