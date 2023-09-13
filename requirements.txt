@@ -1,9 +1,10 @@
 assemblyai==0.17.0
 docx==0.2.4
 ffmpeg_python==0.2.0
+moviepy==2.0.0.dev2
 pydub==0.25.1
+pysrt==1.1.2
 python_docx==0.8.11
 pytube==15.0.0
 streamlit==1.26.0
 streamlit_player==0.1.5
-

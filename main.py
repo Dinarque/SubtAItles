@@ -9,14 +9,14 @@ debug_mode = False
 import ffmpeg
 import streamlit as st 
 from pytube import YouTube
-from pydub import AudioSegment
-from pydub.playback import play
 from streamlit_player import st_player
 import os
 import shutil
 import random 
 import io
 from docx import Document
+import pysrt
+from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 
 ## some functions 
 
@@ -172,9 +172,6 @@ def save_subtitles_to_doc(subs) :
     
     
 
-import sys
-import pysrt
-from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 
 
 def time_to_seconds(time_obj):
