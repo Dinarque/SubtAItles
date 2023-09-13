@@ -18,6 +18,11 @@ from docx import Document
 import pysrt
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 from moviepy.video.tools.subtitles import SubtitlesClip
+from moviepy.editor import VideoFileClip
+from moviepy.video.VideoClip import TextClip
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from pydub import AudioSegment
 
 
 ## some functions 
@@ -228,7 +233,27 @@ if "subtitles" in st.session_state :
             mime="docx"
         )
     
+    from moviepy.editor import VideoFileClip
+    from moviepy.video.VideoClip import TextClip
+    from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+    from moviepy.video.io.VideoFileClip import VideoFileClip
+    from pydub import AudioSegment
     
+    # Load the video clip
+    video = VideoFileClip(st.session_state.mp4)
+    
+    # Load the SRT subtitles
+    subtitles = TextClip.subtitles("subtitles.srt")
+    
+    # Set the subtitles duration to match the video
+    subtitles = subtitles.set_duration(video.duration)
+    
+    # Overlay the subtitles on the video
+    video_with_subtitles = video.set_audio(AudioSegment.silent()).set_duration(video.duration).set_audio(video.audio).set_mask(subtitles.mask).set_position(("center", "bottom")).set_start(0)
+    
+    # Write the video with subtitles to a file
+    video_with_subtitles.write_videofile("output_video_with_subtitles.mp4", codec="libx264")
+        
    
         
 else : 
