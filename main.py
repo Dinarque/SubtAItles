@@ -301,7 +301,7 @@ else :
     "This app is designed to turn any Youtube video into a language learning opportunity : It uses AssemblyAI to generate subtitles for the video, then erases part of the subtitles to create a fill-in-the blanks activity."
     "The activity can then be downloaded and filled out while watching the video. The goal would also have been to merge the subtitles with the video but the humble developper I am didn't find the right way to proceed"
     "___"
-    st.image("")
+    st.image("blob:https://huggingface.co/23aede80-d121-42ea-aba9-31dbae67ceba")
     "WARNING : it is not allowed to use all the videos available on Youtube since some of them are under copyright protection. It is your job as an responsible user to ensure you only use the App with free of right content "
     " For instance you can use all videos under 'fair use' and all the videos that have a 'download' button on their page"
     "___"
