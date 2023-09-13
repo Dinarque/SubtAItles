@@ -6,7 +6,7 @@ Created on Tue Sep 12 17:49:25 2023
 """
 
 debug_mode = False
-
+import ffmpeg
 import streamlit as st 
 from pytube import YouTube
 from pydub import AudioSegment
@@ -15,6 +15,8 @@ from streamlit_player import st_player
 import os
 import shutil
 import random 
+import io
+from docx import Document
 
 ## some functions 
 
@@ -138,7 +140,7 @@ def subtitles_to_file(obj, form, dif) :
     return res
 
 def add_subtitles(mp4, sub) : 
-    import ffmpeg
+    
     
     video = ffmpeg.input(mp4)
     audio = video.audio
@@ -194,8 +196,13 @@ if "subtitles" in st.session_state :
     processed_sub = subtitles_to_file(st.session_state.subtitles, "srt", st.session_state.difficulty)
     st.write(processed_sub)
     save_subtitles_to_doc(processed_sub)
-    with open('worksheet.docx', "r", encoding = "utf-8") as file:
-        st.download_button(label="Download worksheet", data = file ,
+   
+    doc = Document('worksheet.docx')
+    doc_download = doc
+    bio = io.BytesIO()
+    doc_download.save(bio)
+    
+    st.download_button(label="Download worksheet", data = bio ,
             file_name= 'worksheet.docx',
             mime="docx"
         )
