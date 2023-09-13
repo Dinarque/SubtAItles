@@ -307,7 +307,7 @@ else :
     "___"
     "This app was built using the AssemblyAI technlogy."
     "It cost around 1 cent for every minute of video transcribed. See https://www.assemblyai.com/pricing for more information on pricing"
-    "
+    
     st.subheader("Please update a video")
     
         
