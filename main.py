@@ -23,9 +23,18 @@ def get_video(link):
     yt = YouTube(link)
     video = yt.streams.filter(only_audio=True).first()
     out_file = video.download()
-    os.remove("buffer.mp4")
-    os.remove("buffer.mp3")
-    os.remove("final_video.mp4")
+    try :
+        os.remove("buffer.mp4")
+    except :
+        print("clear")
+    try :
+         os.remove("buffer.mp3")
+    except :
+         print("clear")
+    try :
+        os.remove("final_video.mp4")
+    except :
+          print("clear")
     os.rename(out_file, "buffer.mp4")
     base , ext = os.path.splitext(out_file)
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
@@ -190,8 +199,8 @@ if "subtitles" in st.session_state :
             mime="docx"
         )
     st.write("lets add the subtitles")
-    final = add_subtitles(st.session_state.mp4, "subtitles.srt")
-    st.video(final)
+    #final = add_subtitles(st.session_state.mp4, "subtitles.srt")
+    #st.video(final)
     
    
    
