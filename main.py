@@ -194,7 +194,8 @@ if "subtitles" in st.session_state :
     processed_sub = subtitles_to_file(st.session_state.subtitles, "srt", st.session_state.difficulty)
     st.write(processed_sub)
     save_subtitles_to_doc(processed_sub)
-    st.download_button(label="Download worksheet", data = 'worksheet.docx',
+    with open('worksheet.docx', "r") as file:
+        st.download_button(label="Download worksheet", data = file ,
             file_name= 'worksheet.docx',
             mime="docx"
         )
