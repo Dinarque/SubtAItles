@@ -27,7 +27,7 @@ def get_video(link):
     
     yt = YouTube(link)
     video = yt.streams.first()
-    out_file = video.download()
+    
     try :
         os.remove("buffer.mp4")
     except :
@@ -40,6 +40,7 @@ def get_video(link):
         os.remove("final_video.mp4")
     except :
           print("clear")
+    out_file = video.download()
     mp4 = shutil.copy(out_file, "buffer.mp4") 
     mp3 = shutil.copy("buffer.mp4", "buffer.mp3") 
        
