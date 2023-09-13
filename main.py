@@ -5,7 +5,7 @@ Created on Tue Sep 12 17:49:25 2023
 @author: 3b13j
 """
 
-debug_mode = False
+debug_mode = True
 import ffmpeg
 import streamlit as st 
 from pytube import YouTube
