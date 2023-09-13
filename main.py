@@ -147,6 +147,13 @@ def add_subtitles(mp4, sub) :
     """
     return 'final_video.mp4'
     
+def save_subtitles_to_doc(subs) : 
+        
+    import docx
+    doc = docx.Document()
+    doc.add_heading(f'Worksheet for the video {st.session_state.title}',0)
+    st.add_paragraph(subs)
+    doc.save('worksheet.docx')
     
 ## sidebar 
 
@@ -177,6 +184,11 @@ if "subtitles" in st.session_state :
     st.subheader("subtitles :") 
     processed_sub = subtitles_to_file(st.session_state.subtitles, "srt", st.session_state.difficulty)
     st.write(processed_sub)
+    save_subtitles_to_doc(processed_sub)
+    st.download_button(label="Download worksheet",
+            file_name= 'worksheet.docx',
+            mime="docx"
+        )
     st.write("lets add the subtitles")
     final = add_subtitles(st.session_state.mp4, "subtitles.srt")
     st.video(final)
